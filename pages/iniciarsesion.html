@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./../assets/img/favicon.png" />
     <link rel="stylesheet" href="./../assets/css/style.css">
     <title>INICIAR SESION</title>
@@ -25,16 +26,16 @@
         <div class="titulo">
             <a class="titulo" href="./../index.html">FUTBOLMANIA</a>
         </div>
-<div class="imagenTitulo">
-        <img width="150" height="100" src="./../assets/img/AFA png.png" alt="escudo de Argentina Futbol"> <img
-            width="150" height="100" src="./../assets/img/FFC.png" alt="escudo de Chile Futbol"> <img width="150"
-            height="100" src="./../assets/img/FCF.png" alt="escudo de Colombia Futbol">
+        <div class="imagenTitulo">
+            <img width="150" height="100" src="./../assets/img/AFA png.png" alt="escudo de Argentina Futbol"> <img
+                width="150" height="100" src="./../assets/img/FFC.png" alt="escudo de Chile Futbol"> <img width="150"
+                height="100" src="./../assets/img/FCF.png" alt="escudo de Colombia Futbol">
         </div>
 
         <hr>
 
         <nav class="navegacion">
-            <ul class="menu">
+            <ul class="menu grid-container2">
                 <li class="menu__content__subtitulo">ARGENTINA
                     <ul class="submenu">
                         <li><a class="menu__content__letras" href="primeradivision.html">Primera Division</a></li>
@@ -62,25 +63,21 @@
 
     </header>
 
-    <main class="textoInicioSesion">
-        <form action="" method="get">
-            <div class="correo">
-                <label class="correoLetras" for="correo">Correo electrónico</label>
-                <input class="contrasena" type="email" id="correo">
-            </div>
-
-            <div class="correo">
-                <label class="correoLetras" for="contrasena">Contraseña</label>
-                <input class="contrasena" type="password" id="contrasena">
-            </div>
-            <div class="correo">
-                <input  class="boton" type="reset" id="botonDeshacerTodo" value="Deshacer Todo">
-                <input class="boton" type="submit" id="botonIniciarSesion" value="Iniciar Sesion">
-            </div>
-
-
-        </form>
-
+    <main>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <button type="submit" class="btn btn-dark">Iniciar Sesion</button>
+            </form>
+        </div>
     </main>
 
     <hr>
@@ -96,6 +93,7 @@
             <a class="ingresoLetras" href="contacto.html">Contacto</a>
         </div>
     </footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

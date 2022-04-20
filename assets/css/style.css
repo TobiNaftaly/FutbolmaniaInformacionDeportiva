@@ -1,11 +1,14 @@
 *{
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
+    max-width: 100%;
 }
 
 body {
   font-family: Roboto,sans-serif,Arial,Helvetica;
   background-color: #008000;
+  overflow-anchor: none;
 }
 
 .ingreso {
@@ -67,7 +70,7 @@ body {
 
 .submenu{
 	background: green;
-	width: 200%;
+	width: 100%;
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1.5s;
@@ -146,7 +149,7 @@ body {
 }
 
 .imagenesIndex {
-  height: 200px; width: 450px;
+  height: 500px; width: 450px;
 }
 
 .imagenesIndex:hover {
