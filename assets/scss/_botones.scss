@@ -1,0 +1,19 @@
+.boton {
+    background-color: black;
+    text-align: center;
+    color: white;
+    border-radius: 20px;
+
+    &:hover {
+        filter: opacity(75%);
+        background-color: white;
+    }
+}
+
+.botonContacto {
+   @extend .boton;
+   background-color: white !important;
+   color: black !important;
+
+}
+

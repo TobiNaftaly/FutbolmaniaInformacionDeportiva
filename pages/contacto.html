@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../assets/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ce4772c8e2.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="./../assets/img/favicon.png" />
     <link rel="stylesheet" href="./../assets/css/style.css">
     <title>CONTACTO</title>
@@ -62,35 +64,31 @@
 
     </header>
 
+    <main>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="nombres" class="form-label formulario">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombres">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label formulario">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="consulta" class="form-label formulario">Comentanos tu consulta</label>
+                    <textarea  class="form-control" name="consulta" id="consulta" cols="30" rows="10"></textarea>
+                </div>
+                <button type="submit" class="btn botonContacto">Enviar consulta</button>
+            </form>
+        </div>
 
-    <main class="textoInicioSesion">
-
-        <form action="" method="get">
-            <div class="correo">
-                <label  class="correoLetras" for="nombres">Nombre</label>
-                <input  class="contrasena" type="text" id="nombres">
-            </div>
-            <div class="correo">
-                <label  class="correoLetras" for="apellido">Apellido</label>
-                <input  class="contrasena" type="text" id="apellido">
-            </div>
-
-            <div class="correo">
-                <label  class="correoLetras" for="correo">Correo electrónico</label>
-                <input  class="contrasena" type="email" id="correo">
-            </div>
-
-            <div class="correo">
-                <label  class="correoLetras" class="consulta" for="consulta">Comentanos tu consulta</label>
-                <textarea  class="contrasena" name="consulta" id="consulta" cols="30" rows="10"></textarea>
-            </div>
-            <div class="correo">
-                <input class="boton" type="reset" id="botonDeshacerTodo" value="Deshacer Todo">
-                <input class="boton" type="submit" id="botonEnviar" value="Enviar Consulta">
-            </div>
-        </form>
-
-
+        <div class="logos">
+            <i class="fa-brands fa-instagram botonInstagram"></i>
+            <i class="fa-brands fa-facebook-square botonFacebook"></i>
+            <i class="fa-brands fa-twitter-square botonTwitter"></i>
+        </div>
     </main>
 
 
@@ -107,6 +105,7 @@
             <a class="ingresoLetras" href="contacto.html">Contacto</a>
         </div>
     </footer>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
