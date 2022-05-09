@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./../assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="shortcut icon" href="./../assets/img/favicon.png" />
     <link rel="stylesheet" href="./../assets/css/style.css">
     <title>REGISTRO</title>
@@ -61,51 +62,30 @@
         </nav>
 
     </header>
-
-    <main class="textoInicioSesion">
-
-        <form action="" method="get">
-            <div class="correo">
-                <label class="correoLetras" for="nombres">Nombre</label>
-                <input class="contrasena" type="text" id="nombres">
-            </div>
-            <div class="correo">
-                <label class="correoLetras" for="apellido">Apellido</label>
-                <input class="contrasena" type="text" id="apellido">
-            </div>
-
-            <div class="correo">
-                <label class="correoLetras" for="correo">Correo electrónico</label>
-                <input class="contrasena" type="email" id="correo">
-            </div>
-
-            <div class="correo">
-                <label class="correoLetras" for="contrasena">Contraseña</label>
-                <input class="contrasena" type="password" id="contrasena">
-            </div>
-
-            <div class="correo">
-                <label class="correoLetras" class="correoLetras" for="contrasena1">Repita su contraseña</label>
-                <input class="contrasena" type="password" id="contrasena1">
-            </div>
-
-            <div class="correo">
-                <label class="correoLetras" for="clubes">Equipo favorito</label>
-                <select class="contrasena" id="clubes">
-                    <!--Acá irían todos los equipos de Argentina, Chile, Colombia. Voy a esperar a ver lógica porque son muchos.-->
-                    <option class="contrasena" value="bocajrs">Boca Juniors</option>
-                    <option class="contrasena" value="riverplate">River Plate</option>
-                    <option class="contrasena" value="independiente">Independiente</option>
-                </select>
-            </div>
-
-            <div class="correo">
-                <input class="boton" type="reset" id="botonDeshacerTodo" value="Deshacer Todo">
-                <input class="boton" type="submit" id="botonRegistrarme" value="Registrarme">
-            </div>
-
-        </form>
-
+    
+    <main>
+        <div class="container">
+            <form>
+                <div class="mb-3">
+                    <label for="nombres" class="form-label formulario">Nombre y Apellido</label>
+                    <input type="text" class="form-control" id="nombres">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label formulario">Correo electrónico</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text"></div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label formulario">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputPassword2" class="form-label formulario">Repita su Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword2">
+                </div>
+                <button type="submit" class="btn boton">Registrarme</button>
+            </form>
+        </div>
     </main>
 
     <hr>
@@ -121,6 +101,7 @@
             <a class="ingresoLetras" href="contacto.html">Contacto</a>
         </div>
     </footer>
+    <script src="./../assets/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

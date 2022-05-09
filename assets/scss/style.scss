@@ -149,10 +149,6 @@ body {
   
 }
 
-.imagenesIndex {
-  height: 500px; width: 450px;
-}
-
 .imagenesIndex:hover {
   transition: transform 2s;
   transform: scale(1.5, 2)
@@ -172,6 +168,22 @@ body {
     display: flex;
     justify-content: space-around;
     margin-top: 10px;
+}
+
+h1 {
+margin: 50px;
+text-align: center;
+}
+
+h2 {
+  margin-bottom: 20px;
+  margin-left: 50px; margin-right: 50px;
+  text-align: justify;
+}
+
+h3 {
+  margin: 10px;
+  text-align: center;
 }
 
 @media screen and (max-width: 600px) {.grid-container {
