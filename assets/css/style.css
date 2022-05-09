@@ -186,4 +186,6 @@ h3 {
     margin: 30px auto;
     display: flex;
     justify-content: center;
-    text-align: center; } }
+    text-align: center; }
+  .titulo {
+    font-size: 60px; } }
